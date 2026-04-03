@@ -1,0 +1,36 @@
+{
+  "name": "jpn-learn",
+  "version": "1.0.0",
+  "description": "Gamified Hiragana & Katakana study component (WaniKani-inspired)",
+  "main": "./dist/jpn-learn.umd.js",
+  "module": "./dist/jpn-learn.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/jpn-learn.mjs",
+      "require": "./dist/jpn-learn.umd.js"
+    },
+    "./style.css": "./dist/jpn-learn.css"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^7.0.0",
+    "vite-plugin-dts": "^4.0.0"
+  }
+}
